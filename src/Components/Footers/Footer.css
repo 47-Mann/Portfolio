@@ -1,0 +1,27 @@
+footer {
+  background-color: #2e4e8f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+footer img {
+  width: 100px;
+}
+
+.header-social {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 28px;
+}
+
+.header-social a {
+  color: #000;
+  transition: 0.3s;
+}
+
+.header-social a:hover {
+  color: #0077b5;
+}

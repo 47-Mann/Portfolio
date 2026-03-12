@@ -1,0 +1,91 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  padding: 0 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #38bdf8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Fira Code", monospace;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 5px;
+}
+
+nav ul li a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: #007bff;
+  background-color: var(--bg-primary);
+  padding: 5px;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  nav ul li {
+    margin-left: 20px;
+  }
+}
