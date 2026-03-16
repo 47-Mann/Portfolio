@@ -5,12 +5,19 @@
 }
 
 :root[data-theme="light"] {
-  --bg-primary: #f5f5f5;
-  --bg-secondary: #fff;
-  --text-primary: #333;
-  --text-secondary: #70667f;
-  --border-color: #ddd;
-  --shadow-color: rgba(0, 0, 0, 0.1);
+  /* Brighter, more contrasted light theme */
+  --bg-primary: #f4f8ff; /* subtle cool wash */
+  --bg-secondary: #ffffff; /* card / surface */
+  --text-primary: #0f1724; /* deep slate for strong contrast */
+  --text-secondary: #64748b; /* muted slate for secondary text */
+  --border-color: #e6eef8; /* soft blue border */
+  --shadow-color: rgba(2, 6, 23, 0.06); /* gentle shadow */
+  /* Colorful accents for light mode */
+  --accent: #4f7eed; /* coral */
+  --accent-2: #e7cf15; /* teal */
+  --accent-3: #4343db; /* violet */
+  --muted-accent: rgba(255, 107, 107, 0.08);
+  --accent-contrast: #ffffff;
 }
 
 :root[data-theme="dark"] {
@@ -20,15 +27,27 @@
   --text-secondary: #b0b0b0;
   --border-color: #444;
   --shadow-color: rgba(0, 0, 0, 0.4);
+  /* Accents tuned for dark mode */
+  --accent: #ec513c;
+  --accent-2: #3032c2;
+  --accent-3: #2c3dd4;
+  --muted-accent: rgba(34, 211, 238, 0.06);
+  --accent-contrast: #0b1220;
 }
 
 :root {
-  --bg-primary: #f5f5f5;
-  --bg-secondary: #fff;
-  --text-primary: #333;
-  --text-secondary: #70667f;
-  --border-color: #ddd;
-  --shadow-color: rgba(0, 0, 0, 0.1);
+  /* Default (light) theme variables */
+  --bg-primary: #f4f8ff;
+  --bg-secondary: #ffffff;
+  --text-primary: #0f1724;
+  --text-secondary: #64748b;
+  --border-color: #e6eef8;
+  --shadow-color: rgba(2, 6, 23, 0.06);
+  --accent: #6b95ff;
+  --accent-2: #06b6d4;
+  --accent-3: #a479ee;
+  --muted-accent: rgba(255, 107, 107, 0.08);
+  --accent-contrast: #ffffff;
 }
 
 body {

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { FaMoon, FaSun } from "react-icons/fa";
-
+import resume from "../../assets/Sahil-Mann.pdf";
+import Contact from "../Contact/Contact.jsx";
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -24,16 +25,15 @@ const Navbar = () => {
       <div className="nav-links">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a href="../Header/Header.jsx">Home</a>
           </li>
           <li>
-            <a href="/">About</a>
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              Resume
+            </a>
           </li>
           <li>
-            <a href="/">Projects</a>
-          </li>
-          <li>
-            <a href="/">Resume</a>
+            <a href="#contact">Contact Me</a>
           </li>
         </ul>
       </div>

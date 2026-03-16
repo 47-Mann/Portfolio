@@ -6,6 +6,10 @@ nav {
   background-color: var(--bg-secondary);
   padding: 0 20px;
   transition: background-color 0.3s ease;
+  position: sticky;
+  top: 10px;
+  bottom: 10px;
+  z-index: 1000;
 }
 
 .nav-logo {
@@ -13,8 +17,8 @@ nav {
   height: 30px;
   border-radius: 50%;
 
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: #38bdf8;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: var(--accent-contrast);
 
   display: flex;
   align-items: center;
@@ -30,7 +34,7 @@ nav {
 
 .nav-logo:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 30px var(--shadow-color);
 }
 
 nav ul {
@@ -54,16 +58,17 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 nav ul li a:hover {
-  color: #007bff;
-  background-color: var(--bg-primary);
-  padding: 5px;
+  color: var(--accent);
+  background-color: var(--muted-accent);
+  padding: 6px;
+  border-radius: 6px;
 }
 
 .theme-toggle {
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: #333;
+  color: var(--text-secondary);
   cursor: pointer;
   transition: all 0.3s ease;
   padding: 8px;
@@ -74,8 +79,8 @@ nav ul li a:hover {
 }
 
 .theme-toggle:hover {
-  background-color: #f0f0f0;
-  color: #007bff;
+  background-color: var(--muted-accent);
+  color: var(--accent-2);
 }
 
 @media (min-width: 768px) {

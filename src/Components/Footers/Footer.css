@@ -1,5 +1,5 @@
 footer {
-  background-color: #2e4e8f;
+  background-color: var(--accent-3);
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -18,10 +18,10 @@ footer img {
 }
 
 .header-social a {
-  color: #000;
+  color: #fff;
   transition: 0.3s;
 }
 
 .header-social a:hover {
-  color: #0077b5;
+  color: var(--accent-2);
 }
