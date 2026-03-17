@@ -5,18 +5,18 @@
 }
 
 :root[data-theme="light"] {
-  /* Brighter, more contrasted light theme */
-  --bg-primary: #f4f8ff; /* subtle cool wash */
+  /* Bolder, colorful light theme with stronger cool background */
+  --bg-primary: #e6f7ff; /* stronger cool blue background */
   --bg-secondary: #ffffff; /* card / surface */
-  --text-primary: #0f1724; /* deep slate for strong contrast */
-  --text-secondary: #64748b; /* muted slate for secondary text */
-  --border-color: #e6eef8; /* soft blue border */
-  --shadow-color: rgba(2, 6, 23, 0.06); /* gentle shadow */
-  /* Colorful accents for light mode */
-  --accent: #4f7eed; /* coral */
-  --accent-2: #e7cf15; /* teal */
-  --accent-3: #4343db; /* violet */
-  --muted-accent: rgba(255, 107, 107, 0.08);
+  --text-primary: #071227; /* near-black for max contrast */
+  --text-secondary: #475569; /* stronger muted slate */
+  --border-color: #dbeafe; /* crisp pale blue border */
+  --shadow-color: rgba(7, 18, 39, 0.12); /* stronger shadow for depth */
+  /* Bold, saturated accents */
+  --accent: #ff3b5c; /* vivid coral-red */
+  --accent-2: #00b5c2; /* vivid teal */
+  --accent-3: #6b21a8; /* deep purple */
+  --muted-accent: rgba(0, 181, 194, 0.08); /* soft teal wash */
   --accent-contrast: #ffffff;
 }
 
@@ -36,22 +36,26 @@
 }
 
 :root {
-  /* Default (light) theme variables */
-  --bg-primary: #f4f8ff;
+  /* Default (bold light) theme variables */
+  --bg-primary: #e6f7ff;
   --bg-secondary: #ffffff;
-  --text-primary: #0f1724;
-  --text-secondary: #64748b;
-  --border-color: #e6eef8;
-  --shadow-color: rgba(2, 6, 23, 0.06);
-  --accent: #6b95ff;
-  --accent-2: #06b6d4;
-  --accent-3: #a479ee;
-  --muted-accent: rgba(255, 107, 107, 0.08);
+  --text-primary: #071227;
+  --text-secondary: #475569;
+  --border-color: #dbeafe;
+  --shadow-color: rgba(7, 18, 39, 0.12);
+  --accent: #ff3b5c;
+  --accent-2: #00b5c2;
+  --accent-3: #6b21a8;
+  --muted-accent: rgba(0, 181, 194, 0.08);
   --accent-contrast: #ffffff;
 }
 
 body {
-  background-color: var(--bg-primary);
+  background: linear-gradient(
+    180deg,
+    var(--bg-primary) 0%,
+    var(--bg-secondary) 100%
+  );
   color: var(--text-primary);
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
