@@ -4,12 +4,14 @@ import Navbar from "./Components/Navbar/Navbar.jsx";
 import Projects from "./Components/Projects/Projects.jsx";
 import Works from "./Components/Works/Work.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
+import Research from "./Components/Research/Research.jsx";
 function App() {
   return (
     <div>
       <Navbar />
       <Header />
       <Projects />
+      <Research />
       <Works />
       <Contact />
       <Footer />

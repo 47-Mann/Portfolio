@@ -1,16 +1,15 @@
-.projects-container {
+.research-container {
   margin: 20px;
-  margin-bottom: 20px;
   background-color: var(--bg-secondary);
   transition: background-color 0.3s ease;
 }
 
-.projects-list-container {
+.research-list-container {
   border-radius: 20px;
   padding: 20px;
 }
 
-.project-item {
+.research-item {
   margin: 20px;
   border-radius: 16px;
   box-shadow: 0 4px 30px var(--shadow-color);
@@ -20,7 +19,13 @@
   transition: all 0.3s ease;
 }
 
-.project-item svg {
+.research-item li {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.research-item svg {
   margin: 10px;
   font-size: 2rem;
 }
@@ -29,25 +34,41 @@
   color: var(--accent-2);
   margin-right: 15px;
 }
-.item-des {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 5px;
-}
-.projects-container h1 span {
+
+.research-container h1 span {
   font-size: 2.5rem;
   color: var(--accent);
 }
+.research-container h2 {
+  font-size: 1.5rem;
+  color: rgb(65, 155, 178);
+  margin-top: 10px;
+}
+
+.research-link:link {
+  color: rgb(93, 93, 219);
+}
+
+.research-link:visited {
+  color: rgb(141, 212, 206);
+}
+
+.research-link:hover {
+  color: rgb(245, 184, 71);
+}
+
+.research-link:active {
+  color: green;
+}
 
 @media (min-width: 768px) {
-  .projects-list-container {
+  .research-list-container {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .projects-des-container {
+  .research-des-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -55,34 +76,13 @@
     align-items: flex-start;
   }
 
-  .projects-des-container > h1,
-  .projects-des-container > p,
-  .projects-des-container > button {
+  .research-des-container > h1,
+  .research-des-container > p,
+  .research-des-container > button {
     flex: 0 0 100%;
-  }
-
-  .project-item {
-    flex: 1;
-    min-width: 250px;
   }
 
   .item-des {
     width: 100%;
   }
-}
-
-.ml:link {
-  color: rgb(93, 93, 219);
-}
-
-.ml:visited {
-  color: rgb(141, 212, 206);
-}
-
-.ml:hover {
-  color: rgb(245, 184, 71);
-}
-
-.ml:active {
-  color: green;
 }
