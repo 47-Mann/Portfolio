@@ -70,6 +70,16 @@
   font-size: 1.3rem;
 }
 
+.project-title a.ml:link,
+.project-title a.ml:visited {
+  color: var(--accent);
+}
+
+.project-title a.ml:hover,
+.project-title a.ml:active {
+  color: var(--accent-2);
+}
+
 .project-item {
   display: flex;
   align-items: flex-start;

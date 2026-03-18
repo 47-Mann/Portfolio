@@ -18,9 +18,9 @@ const Header = () => {
               500,
               "ML Enthusiast 🤖",
               500,
-              "Problem Solver 🧠",
+              "Algorithmic Problem Solver 🧠",
               500,
-              "Tech Innovator ⚡",
+              "Event-Driven App Builder ⚡",
               500,
             ]}
             speed={15}

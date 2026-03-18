@@ -20,7 +20,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  ML Malware Detection Web App
+                  ML Malware Detection Web App(LIVE)
                 </a>
               </h3>
               <br />
@@ -56,7 +56,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  System View Dashboard
+                  System View Dashboard(LIVE)
                 </a>
               </h3>
               <br />
@@ -66,7 +66,7 @@ const Projects = () => {
                 visibility.
                 <br />
                 <strong>Tech Stack:</strong> Node.js • Express • MongoDB •
-                Socket.IO • Chart.js
+                Socket.io • Chart.js
                 <br />
                 <strong>Highlights:</strong> Live CPU/memory metrics • Snapshot
                 storage • Interactive health visualization
@@ -86,16 +86,18 @@ const Projects = () => {
             <div className="item-des">
               <h3 className="project-title">
                 <FaDatabase className="project-title-icon" />
-                Blog Platform
+                Chat Application <br />
+                (In-Progress)
               </h3>
+              <br />
               <p>
-                A full-stack blog platform for creating, managing, and exploring
-                posts with a smooth publishing workflow.
+                A Real-time Full-Stack Chat Application
                 <br />
-                <strong>Tech Stack:</strong> Node.js • Express • MongoDB
+                <strong>Tech Stack:</strong> Node.js • Express • MongoDB •
+                React.js • Socket.io
                 <br />
-                <strong>Highlights:</strong> CRUD blog management • Clean
-                content flow • Scalable backend structure
+                <strong>Highlights:</strong> Real-Time Messaging • User
+                Authentication • User Typing Indicators • Middlewares
               </p>
             </div>
           </div>
