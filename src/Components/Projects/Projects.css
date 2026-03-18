@@ -24,16 +24,56 @@
   margin: 10px;
   font-size: 2rem;
 }
-.project-icon {
-  font-size: 35px;
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-title-icon {
+  margin: 0;
+  font-size: 1.3rem;
   color: var(--accent-2);
-  margin-right: 15px;
+  flex-shrink: 0;
 }
 .item-des {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 5px;
+}
+
+.item-des h3 {
+  margin: 0;
+  line-height: 1.25;
+}
+
+.item-des p {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 0.98rem;
+  color: var(--text-primary);
+}
+
+.item-des p strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.item-des a[title="GitHub"] {
+  margin-top: 10px;
+}
+
+.item-des a[title="GitHub"] svg {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.project-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
 }
 .projects-container h1 span {
   font-size: 2.5rem;
@@ -52,7 +92,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .projects-des-container > h1,
@@ -64,10 +104,13 @@
   .project-item {
     flex: 1;
     min-width: 250px;
+    display: flex;
+    flex-direction: column;
   }
 
   .item-des {
     width: 100%;
+    height: 100%;
   }
 }
 
