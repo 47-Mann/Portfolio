@@ -23,6 +23,7 @@ const projectData = [
       "Static file analysis for safe malware classification",
       "Compared multiple ML models for prediction performance",
       "Delivered instant predictions through a browser-based interface",
+      "Achieved up to 99.36% accuracy and 0.9997 ROC-AUC using XGBoost, demonstrating strong model performance",
     ],
   },
   {
