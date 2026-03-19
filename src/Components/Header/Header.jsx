@@ -6,7 +6,7 @@ import profileImg from "../../assets/Me.png";
 
 const Header = () => {
   return (
-    <section className="header-container">
+    <section className="header-container" id="home">
       <div className="header-content">
         <p className="header-intro">Hi, I'm</p>
         <h1 className="fullName">Sahil Mann</h1>
