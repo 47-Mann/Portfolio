@@ -1,56 +1,59 @@
 import React from "react";
-import { FaLaptopCode, FaDatabase, FaBrain } from "react-icons/fa";
 import "./Research.css";
+
 const Research = () => {
   return (
-    <div className="research-container">
-      <div className="research-list-container">
-        <div className="research-des-container">
-          <h1>
-            My <span>Research Work</span>
-          </h1>
-          <h2>
-            <a
-              className="research-link"
-              href="https://github.com/47-Mann/EMBER2024-Temporal-Malware-Detection-Study"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Temporal Generalization of Static Malware Detectors: A Large-Scale
-              Empirical Study
-            </a>
-          </h2>
-          <div className="research-item">
-            <ul>
-              <li>
-                Conducted an empirical study on temporal robustness of malware
-                detection models using EMBER2024 (3M+ samples)
-              </li>
-              <li>
-                Evaluated LR, SVM, LightGBM, XGBoost, and MLP under strict
-                chronological splits
-              </li>
-              <li>
-                Identified performance degradation under temporal drift,
-                especially in recall
-              </li>
-              <li>
-                Demonstrated limitations of random-split evaluation (overly
-                optimistic results)
-              </li>
-              <li>
-                Performed permutation feature importance to analyze feature
-                stability across time
-              </li>
-              <li>
-                Accepted for oral presentation at an international conference
-                (ICAISET 2026)
-              </li>
-            </ul>
-          </div>
+    <section className="research-container">
+      <div className="research-content">
+        <p className="research-label">Research Work</p>
+
+        <h1>Temporal Generalization of Static Malware Detectors</h1>
+
+        <h2>
+          <a
+            className="research-link"
+            href="https://github.com/47-Mann/EMBER2024-Temporal-Malware-Detection-Study"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Large-Scale Empirical Study on EMBER2024
+          </a>
+        </h2>
+
+        <p className="research-summary">
+          A large-scale study analyzing how static malware detection models
+          degrade over time under realistic chronological evaluation.
+        </p>
+
+        <div className="research-item">
+          <ul>
+            <li>
+              Used EMBER2024 with 3M+ samples to study temporal robustness in
+              malware detection
+            </li>
+            <li>
+              Evaluated Logistic Regression, SVM, LightGBM, XGBoost, and MLP
+              under strict chronological splits
+            </li>
+            <li>
+              Observed performance degradation under temporal drift, especially
+              in recall
+            </li>
+            <li>
+              Showed that random-split evaluation can produce overly optimistic
+              results
+            </li>
+            <li>
+              Applied permutation feature importance to analyze feature
+              stability across time
+            </li>
+            <li className="highlight">
+              <strong>Accepted for oral presentation at ICAISET 2026</strong>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
