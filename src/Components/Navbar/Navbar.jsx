@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { FaMoon, FaSun } from "react-icons/fa";
 import resume from "../../assets/Sahil-Mann.pdf";
-import Contact from "../Contact/Contact.jsx";
+
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -20,27 +20,32 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
-      <div className="nav-logo">{`SM`}</div>
+    <nav className="navbar">
+      <a href="#home" className="nav-logo">
+        SM
+      </a>
+
       <div className="nav-links">
         <ul>
           <li>
-            <a href="../Header/Header.jsx">Home</a>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
           </li>
           <li>
             <a href={resume} target="_blank" rel="noopener noreferrer">
               Resume
             </a>
           </li>
-          <li>
-            <a href="#contact">Contact Me</a>
-          </li>
         </ul>
       </div>
+
       <button
         className="theme-toggle"
         onClick={toggleDarkMode}
-        title="Toggle Dark Mode"
+        title="Toggle theme"
+        aria-label="Toggle theme"
       >
         {isDarkMode ? <FaSun /> : <FaMoon />}
       </button>
