@@ -44,7 +44,7 @@ const projectData = [
   {
     title: "Full-Stack Chat Application",
     icon: <FaDatabase className="project-title-icon" />,
-    github: "",
+    github: "https://github.com/47-Mann/Chat-App-Socket.io",
     demo: "",
     status: "In Progress",
     description:
